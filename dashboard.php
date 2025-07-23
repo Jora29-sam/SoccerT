@@ -53,7 +53,6 @@ document.addEventListener("contextmenu", function (e) {
             <li>
                 <a href="#">ERP</a>
                 <ul class="submenu">
-                    <li><a href="inventario.php">Inventario</a></li>
                     <li><a href="ventas.php">Ventas</a></li>
                     <li><a href="finanzas.php">Finanzas</a></li>
                     <li><a href="logistica.php">Logistica</a></li>
