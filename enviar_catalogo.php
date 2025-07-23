@@ -2,6 +2,7 @@
 require_once('tcpdf/tcpdf.php');
 require 'vendor/autoload.php';
 
+
 include 'conexion.php';
 
 // Datos del lead

@@ -6,6 +6,7 @@
 <?php if (empty($usuario)): ?>
     <!-- Login Form -->
     <h2>Iniciar sesión</h2>
+    
     <form method="post">
       <input type="hidden" name="accion" value="login">
       <input type="email" name="correo" placeholder="Correo" required><br>

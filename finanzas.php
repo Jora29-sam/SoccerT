@@ -94,6 +94,21 @@ $proveedores = $conn->query("SELECT * FROM pagos_proveedores ORDER BY id_pago DE
 
 <!DOCTYPE html>
 <html lang="es">
+    <script>
+// Bloquea Ctrl+U (Ver código fuente)
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.key.toLowerCase() === "u") {
+        alert("🚫 Ver código fuente no está permitido.");
+        e.preventDefault();
+    }
+});
+
+// Bloquea clic derecho
+document.addEventListener("contextmenu", function (e) {
+    alert("🚫 Clic derecho deshabilitado.");
+    e.preventDefault();
+});
+</script>
 <head>
     <meta charset="UTF-8">
     <title>Finanzas</title>

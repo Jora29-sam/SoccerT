@@ -1,6 +1,7 @@
 <?php
 include 'auth.php';
 
+
 $q = $_GET['q'] ?? '';
 $q = trim($q);
 

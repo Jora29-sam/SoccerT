@@ -1,6 +1,7 @@
 <?php
 include 'auth.php';
 
+
 if (!isset($_SESSION["rol"]) || $_SESSION["rol"] !== "admin") {
     header("Location: index.php");
     exit();

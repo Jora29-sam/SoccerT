@@ -2,6 +2,7 @@
 session_start();
 include 'conexion.php';
 
+
 if (!isset($_SESSION['id_usuario'])) {
     http_response_code(401);
     echo "No autenticado";

@@ -1,6 +1,7 @@
 <?php
 include 'auth.php';
 
+
 if (!isset($_SESSION["rol"]) || $_SESSION["rol"] !== "admin") {
     header("Location: index.php");
     exit();
@@ -10,6 +11,21 @@ if (!isset($_SESSION["rol"]) || $_SESSION["rol"] !== "admin") {
 
 <!DOCTYPE html>
 <html lang="es">
+    <script>
+// Bloquea Ctrl+U (Ver código fuente)
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.key.toLowerCase() === "u") {
+        alert("🚫 Ver código fuente no está permitido.");
+        e.preventDefault();
+    }
+});
+
+// Bloquea clic derecho
+document.addEventListener("contextmenu", function (e) {
+    alert("🚫 Clic derecho deshabilitado.");
+    e.preventDefault();
+});
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

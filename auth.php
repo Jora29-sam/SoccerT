@@ -20,6 +20,7 @@ if (isset($_SESSION["id_usuario"])) {
     $usuario = $result->fetch_assoc();
 }
 
+
 // Procesar formulario login o registro
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['accion'])) {
 

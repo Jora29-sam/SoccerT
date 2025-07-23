@@ -2,6 +2,7 @@
 session_start();
 include 'conexion.php';
 
+
 if (!isset($_SESSION['id_usuario'])) {
     header("Location: login.php");
     exit;
