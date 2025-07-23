@@ -1,0 +1,49 @@
+
+/*Teams Style*/
+.team-list{
+    color: #f9f7f7;
+}
+.equipos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.equipo {
+    text-align: center;
+    width: 150px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto borroso */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.2s ease;
+}
+.equipo img {
+    width: 150px;
+    height: 150;
+}
+body {
+    background-image: url('/soccer/static/images/wall/equipos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.equipo-btn {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.2s ease;
+}
+.equipo-btn:hover {
+    transform: scale(1.05);
+}
+
+.equipo p {
+    margin-top: 10px;
+    color: #ffffff;
+}

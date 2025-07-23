@@ -1,0 +1,65 @@
+body.resumen main {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+body.resumen main h1 {
+    text-align: center;
+}
+
+body.resumen main table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+}
+
+body.resumen main th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+body.resumen main th {
+    background-color: #333;
+    color: #fff;
+}
+
+body.resumen main a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #25B2FF;
+    padding: 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+body.resumen main a:hover {
+    background-color: #195F89;
+}
+
+body.resumen main .vacio {
+    text-align: center;
+}
+
+/*Comprar*/
+body.resumen main .comprar-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2EB8E5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+body.resumen main .comprar-btn:hover {
+    background-color: #164F7C;
+}

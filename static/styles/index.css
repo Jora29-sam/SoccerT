@@ -1,0 +1,325 @@
+/* Menu Style */
+.menu {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.buscador {
+    display: flex; /* Organiza los íconos, el campo de búsqueda y el botón en fila */
+    align-items: center; /* Alinea verticalmente todos los elementos */
+    gap: 2px; /* Reduce el espacio entre los íconos y el input */
+}
+
+.cart, .profile {
+    font-size: 20px; /* Tamaño de los íconos */
+    text-decoration: none; /* Sin subrayado */
+    color: #fff; /* Color blanco */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    margin-right: 5px; /* Ajusta la distancia respecto al input */
+    transition: color 0.3s ease; /* Suaviza el cambio de color en hover */
+}
+.add-to-cart {
+    background-color: #007bff; /* Azul llamativo */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Resalta el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: all 0.3s ease; /* Suaviza los cambios de estilo */
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3; /* Azul más oscuro al hacer hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.add-to-cart:active {
+    background-color: #0172B4; /* Azul aún más oscuro cuando se presiona */
+    transform: translateY(0); /* Quita la elevación al hacer clic */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Reduce la sombra */
+}
+.cart-count {
+    position: absolute; /* Permite colocarlo al lado del ícono */
+    top: -5px; /* Ajusta la posición vertical */
+    right: -10px; /* Ajusta la posición horizontal */
+    background-color: #ff4d4d; /* Rojo llamativo */
+    color: #fff; /* Texto blanco */
+    border-radius: 50%; /* Hace que sea un círculo */
+    padding: 2px 6px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-weight: bold; /* Resalta el número */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+.updated {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+    background-color: #ff0000; /* Cambia temporalmente a un rojo más intenso */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Suaviza el efecto */
+}
+
+.buscador input[type="text"] {
+    border: 1px solid #ccc; /* Borde claro */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none; /* Sin contorno al enfocarse */
+    flex-grow: 1; /* Permite que el campo de texto ocupe el espacio restante */
+}
+
+.buscador button {
+    border: none; /* Sin borde */
+    background-color: transparent; /* Fondo transparente */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    padding: 5px 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    color: #fff; /* Color del botón */
+}
+
+.buscador button:hover {
+    background-color: #555; /* Fondo más oscuro al pasar el ratón */
+}
+
+.links {
+    display: flex; /* Organiza los hipervínculos en fila */
+    gap: 25px; /* Espaciado entre íconos */
+}
+
+
+/* Estilo de imagen1 */
+.imagen_principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Estilo del logo */
+.logo {
+    width: 60px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Estilos de la lista */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+/* Estilos de los elementos de la lista */
+.menu ul li {
+    margin: 0 15px;
+}
+
+/* Estilos de los enlaces */
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 20px;
+    position: relative; /* Necesario para el subrayado */
+}
+
+/* Subrayado al pasar el mouse */
+.menu ul li a:hover {
+    color: #fff; /* Mantiene el color blanco al hacer hover */
+}
+
+.menu ul li a::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Grosor de la línea */
+    background-color: #fff; /* Color de la línea */
+    transform: scaleX(0); /* Inicialmente no se muestra */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición */
+}
+
+/* Aparece la línea al hacer hover */
+.menu ul li a:hover::after {
+    transform: scaleX(1); /* Hace que la línea se muestre */
+}
+
+
+/* Imagen debajo del menú */
+.hero img {
+    width: 100%;  /* Hace que la imagen abarque todo el ancho */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios extra */
+}
+
+/* Estilos para el slogan */
+.slogan {
+    text-align: center;  /* Centra el texto */
+    margin-top: 20px;    /* Espaciado superior */
+    font-family: 'Arial', sans-serif;  /* Cambia el tipo de letra */
+    font-size: 36px;     /* Tamaño de la fuente */
+    font-weight: bold;   /* Estilo en negrita */
+    color: #333;         /* Color del texto */
+}
+/* Sección de productos */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.products h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los productos */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product {
+    display: flex; /* Activa flexbox para organizar elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.cart {
+    position: relative; /* Permite posicionar el badge en relación con el ícono */
+    font-size: 24px; /* Tamaño del ícono */
+    color: #fff; /* Color blanco para el ícono */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+}
+
+.cart-count {
+    position: absolute; /* Permite colocarlo encima o al lado del ícono */
+    top: -5px; /* Ajusta la posición vertical del badge */
+    right: -10px; /* Ajusta la posición horizontal del badge */
+    background-color: #ff4d4d; /* Rojo llamativo */
+    color: #fff; /* Texto blanco */
+    border-radius: 50%; /* Hace que sea un círculo */
+    padding: 2px 6px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-weight: bold; /* Resalta el número */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+.updated {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+    background-color: #ff0000; /* Cambia temporalmente a un rojo más intenso */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Suaviza el efecto */
+}
+
+
+/* Tarjetas de productos */
+.product {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes de los productos */
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Nombre del producto */
+.product p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Precio */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Sección de equipos en tendencia */
+.trending-teams {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.trending-teams h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los equipos */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre tarjetas (ajustable) */
+}
+
+
+
+
+/* Tarjetas de equipo */
+.team {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 15px;
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo para controlar el ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 5px; /* Espacio adicional por seguridad */
+    transition: transform 0.2s ease;
+}
+
+
+
+.team:hover {
+    transform: scale(1.05);
+}
+
+
+/* Imágenes dentro de círculos */
+/* Logos dentro de las burbujas */
+.team img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Nombre del equipo */
+.team p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Estilo especial para el botón "More" */
+.more img {
+    opacity: 0.6;
+}
+.equipos-fondo {
+    background-image: url('/static/images/equipos.png'); /* Cambia por la ruta de tu imagen */
+    background-size: cover;  /* Ajusta la imagen para que cubra todo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    padding: 40px 20px; /* Ajusta los espacios internos si lo necesitas */
+}

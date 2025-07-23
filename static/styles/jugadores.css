@@ -1,0 +1,54 @@
+.jugadores-lista {
+    padding: 20px;
+    color: #f1f1f1;
+}
+
+.jugadores-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.jugador {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.jugador img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.jugador-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.jugador-info p {
+    margin: 4px 0;
+}
+
+body {
+    background-color: #121212;
+    font-family: sans-serif;
+}
+
+.jugador-btn {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.jugador-btn:hover {
+    transform: scale(1.03);
+}

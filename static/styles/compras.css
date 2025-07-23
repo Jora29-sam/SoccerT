@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/soccer/static/images/wall/compras.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Encabezado */
+header.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header.menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header.menu a:hover {
+    color: #f0ad4e;
+}
+
+/* Contenedor principal */
+.compras-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.compras-container h1,
+.compras-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+/* Tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+table th, table td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Inputs y selects */
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 4px;
+}
+
+form input[type="number"]:focus,
+form select:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+/* Botón */
+form button {
+    background-color: #33b3d6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form button:hover {
+    background-color: #195F89;
+}
+
+.notificacion-exito {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/*Acciones*/
+.detalle td button {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.detalle td button {
+  background: transparent;
+  border: none;
+  color: inherit; /* opcional: toma el color del texto del td */
+  cursor: pointer;
+  padding: 2px 4px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.detalle td button:hover {
+  text-decoration: underline; /* opcional: efecto al pasar el mouse */
+}
+
+/*Cantidad*/
+/* Para los campos dentro de tablas */
+.detalle input[type="number"],
+table input[type="number"] {
+  width: 50px;
+  text-align: center;
+  padding: 2px;
+  font-size: 0.9em;
+}
+
+

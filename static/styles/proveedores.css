@@ -1,0 +1,154 @@
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/soccer/static/images/wall/proveedor.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Encabezado */
+header.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header.menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header.menu a:hover {
+    color: #f0ad4e;
+}
+
+/* Contenedor principal */
+.proveedores-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.proveedores-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #f5f5f5;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+form input,
+form textarea {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #33b3d6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #195F89;
+}
+
+/* Botones CRUD */
+.crud-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+}
+
+.crud-btn.edit {
+    background-color: #5bc0de;
+}
+
+.crud-btn.edit:hover {
+    background-color: #31b0d5;
+}
+
+.crud-btn.delete {
+    background-color: #d9534f;
+}
+
+.crud-btn.delete:hover {
+    background-color: #c9302c;
+}
+
+/*Acciones*/
+.acciones button {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 2px 4px;
+  margin-right: 5px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.acciones button:hover {
+  text-decoration: underline;
+}
